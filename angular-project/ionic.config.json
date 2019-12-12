@@ -1,0 +1,9 @@
+{
+  "name": "webmessenger",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "268f9dce"
+}

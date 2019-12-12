@@ -1,0 +1,162 @@
+/* Document Level Styles */
+
+/*
+  The imports below are needed to include our light dom css for global styles such as fonts and colors.
+  You can comment out any of these imports if you do not need that css. For example, if you have your own
+  global font family css then you can comment out the typography.css import.
+*/
+
+/** Core CSS required for ionic components to work property */
+@import "~@ionic/core/css/core.css";
+
+/** Basic CSS for apps built with Ionic */
+@import "~@ionic/core/css/normalize.css";
+@import "~@ionic/core/css/structure.css";
+@import "~@ionic/core/css/typography.css";
+
+/** Optional CSS utils that can be commented out */
+@import "~@ionic/core/css/padding.css";
+@import "~@ionic/core/css/float-elements.css";
+@import "~@ionic/core/css/text-alignment.css";
+@import "~@ionic/core/css/text-transformation.css";
+@import "~@ionic/core/css/flex-utils.css";
+
+/*
+  The CSS Variables below can be used to theme your app.
+  For more info on CSS variables check out:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+
+  More info about color theming using Ionic:
+  https://ionicframework.com/docs/theming/color-generator
+*/
+
+p {
+  --color: var(--ion-color-contrast);
+}
+a {
+  color: #00ACFF;
+  font-weight: var(--font-weight-bold);
+
+  &:hover {
+    opacity: .7;
+  }
+}
+ion-grid {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+ion-content {
+  --background: var(--ion-color-primary);
+}
+ion-toolbar {
+  height: 48px;
+  --background: var(--ion-color-secondary);
+  --color: var(--ion-color-secondary-contrast);
+}
+ion-icon {
+  font-size: 24px;
+  color: var(--ion-color-primary-contrast);
+}
+ion-avatar {
+  background: var(--ion-avatar-background);
+}
+ion-header ion-label, ion-header ion-title {
+  font-size: 20px;
+  font-weight: var(--bold-font-weight);
+}
+.item-has-focus .label-stacked.sc-ion-label-md-h {
+  color: var(--ion-color-primary-contrast) !important;
+  opacity: .7;
+}
+ion-input.ng-touched.ng-invalid.ion-invalid {
+  border-bottom: 1px solid red;
+}
+ion-card {
+  --background: var(--ion-color-primary);
+  //--color: var(--ion-color-secondary);
+}
+.alert-button {
+  color: var(--ion-color-dark) !important;
+}
+.ion-page {
+  overflow: hidden  !important;
+}
+
+.page-placeholder {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  height: 100%;
+}
+
+:root {
+  --ion-main-gradient: linear-gradient(-45deg, #39810F 0%, #6FE157 100%);
+  --ion-font-family: 'SF UI Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+  --ion-margin: 8px;
+  --bold-font-weight: 700;
+
+  --ion-color-primary: #F0F0F0;
+  --ion-color-primary-rgb: 240,240,240;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #d3d3d3;
+  --ion-color-primary-tint: #f2f2f2;
+
+  --ion-color-secondary: #FFFFFF;
+  --ion-color-secondary-rgb: 255,255,255;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #e0e0e0;
+  --ion-color-secondary-tint: #ffffff;
+
+  --ion-color-tertiary: #8692A3;
+  --ion-color-tertiary-rgb: 134,146,163;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0,0,0;
+  --ion-color-tertiary-shade: #76808f;
+  --ion-color-tertiary-tint: #929dac;
+
+  --ion-color-success: #04C300;
+  --ion-color-success-rgb: 4, 195, 0;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #04ac00;
+  --ion-color-success-tint: #1dc91a;
+
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  --ion-color-danger: #D0021B;
+  --ion-color-danger-rgb: 208, 2, 27;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #b70218;
+  --ion-color-danger-tint: #d51b32;
+
+  --ion-color-dark: #000000;
+  --ion-color-dark-rgb: 248, 248, 248;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 0, 0, 0;
+  --ion-color-dark-shade: #dadada;
+  --ion-color-dark-tint: #3a3a3a;
+
+  --ion-color-medium: #9B9B9B;
+  --ion-color-medium-rgb: 155, 155, 155;
+  --ion-color-medium-contrast: #000000;
+  --ion-color-medium-contrast-rgb: 0, 0, 0;
+  --ion-color-medium-shade: #888888;
+  --ion-color-medium-tint: #a5a5a5;
+
+  --ion-color-light: #F8F8F8;
+  --ion-color-light-rgb: 248, 248, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #dadada;
+  --ion-color-light-tint: #f9f9f9;
+}

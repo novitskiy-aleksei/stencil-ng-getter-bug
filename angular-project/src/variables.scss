@@ -1,0 +1,222 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+
+html{
+  font-size: 18px;
+  --ion-font-size-xx-small: .5rem;
+  --ion-font-size-x-small: .6rem;
+  --ion-font-size-small: .8rem;
+  --ion-font-size-medium: 1rem;
+  --ion-font-size-large: 1.2rem;
+  --ion-font-size-x-large: 1.3rem;
+  --ion-font-size-xx-large: 1.6rem;
+  --ion-font-size-xxx-large: 2rem;
+
+  h1 {
+    font-size: var(--ion-font-size-xxx-large);
+  }
+
+  h2 {
+    font-size: var(--ion-font-size-xx-large);
+  }
+
+  h3 {
+    font-size: var(--ion-font-size-x-large);
+  }
+
+  h4 {
+    font-size: var(--ion-font-size-large);
+  }
+
+  h5 {
+    font-size: var(--ion-font-size-medium);
+  }
+
+  h6 {
+    font-size: var(--ion-font-size-small);
+  }
+}
+
+/** Ionic CSS Variables **/
+:root {
+  .light-theme {
+    --ion-main-gradient: linear-gradient(-45deg, #00ACFF 0%, #00EDFF 100%);
+    --ion-avatar-background: var(--ion-main-gradient);
+    --ion-svg-color-main: invert(19%) sepia(76%) saturate(0%) hue-rotate(155deg) brightness(95%) contrast(118%);
+    --ion-svg-color-secondary: invert(70%) sepia(1%) saturate(0%) hue-rotate(73deg) brightness(88%) contrast(91%);
+    --ion-font-family: 'SF UI Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+    --ion-margin: 8px;
+    --bold-font-weight: 700;
+
+    --ion-color-my-message: #CCEDFD;
+    --ion-color-my-message-rgb: 204,237,253;
+    --ion-color-my-message-contrast: #000000;
+    --ion-color-my-message-contrast-rgb: 0,0,0;
+    --ion-color-my-message-shade: #b4d1df;
+    --ion-color-my-message-tint: #d1effd;
+
+    ////////////////////////////
+
+    --ion-color-primary: #F0F0F0;
+    --ion-color-primary-rgb: 240,240,240;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0,0,0;
+    --ion-color-primary-shade: #d3d3d3;
+    --ion-color-primary-tint: #f2f2f2;
+
+    --ion-color-secondary: #FFFFFF;
+    --ion-color-secondary-rgb: 255,255,255;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0,0,0;
+    --ion-color-secondary-shade: #e0e0e0;
+    --ion-color-secondary-tint: #ffffff;
+
+    --ion-color-tertiary: #8692A3;
+    --ion-color-tertiary-rgb: 134,146,163;
+    --ion-color-tertiary-contrast: #000000;
+    --ion-color-tertiary-contrast-rgb: 0,0,0;
+    --ion-color-tertiary-shade: #76808f;
+    --ion-color-tertiary-tint: #929dac;
+
+    --ion-color-fourth: #F3F3F3;
+    --ion-color-fourth-rgb: 243,243,243;
+    --ion-color-fourth-contrast: #000000;
+    --ion-color-fourth-contrast-rgb: 0,0,0;
+    --ion-color-fourth-shade: #d6d6d6;
+    --ion-color-fourth-tint: #f4f4f4;
+
+    --ion-svg-color-success: invert(40%) sepia(98%) saturate(1065%) hue-rotate(86deg) brightness(105%) contrast(104%);
+
+    --ion-color-success: #04C300;
+    --ion-color-success-rgb: 4, 195, 0;
+    --ion-color-success-contrast: #ffffff;
+    --ion-color-success-contrast-rgb: 255, 255, 255;
+    --ion-color-success-shade: #04ac00;
+    --ion-color-success-tint: #1dc91a;
+
+    --ion-color-warning: #ffce00;
+    --ion-color-warning-rgb: 255, 206, 0;
+    --ion-color-warning-contrast: #000000;
+    --ion-color-warning-contrast-rgb: 0, 0, 0;
+    --ion-color-warning-shade: #e0b500;
+    --ion-color-warning-tint: #ffd31a;
+
+    --ion-svg-color-danger: invert(18%) sepia(78%) saturate(4973%) hue-rotate(344deg) brightness(78%) contrast(114%);
+
+    --ion-color-danger: #D0021B;
+    --ion-color-danger-rgb: 208, 2, 27;
+    --ion-color-danger-contrast: #ffffff;
+    --ion-color-danger-contrast-rgb: 255, 255, 255;
+    --ion-color-danger-shade: #b70218;
+    --ion-color-danger-tint: #d51b32;
+
+    --ion-color-dark: #000000;
+    --ion-color-dark-rgb: 248, 248, 248;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 0, 0, 0;
+    --ion-color-dark-shade: #dadada;
+    --ion-color-dark-tint: #3a3a3a;
+
+    --ion-color-medium: #9B9B9B;
+    --ion-color-medium-rgb: 155, 155, 155;
+    --ion-color-medium-contrast: #000000;
+    --ion-color-medium-contrast-rgb: 0, 0, 0;
+    --ion-color-medium-shade: #888888;
+    --ion-color-medium-tint: #a5a5a5;
+
+    --ion-color-light: #F8F8F8;
+    --ion-color-light-rgb: 248, 248, 248;
+    --ion-color-light-contrast: #000000;
+    --ion-color-light-contrast-rgb: 0, 0, 0;
+    --ion-color-light-shade: #dadada;
+    --ion-color-light-tint: #f9f9f9;
+  }
+
+  .dark-theme {
+    --ion-main-gradient: linear-gradient(-45deg, #00ACFF 0%, #00EDFF 100%);
+    --ion-avatar-background: linear-gradient(-45deg, #000 0%, rgb(52, 63, 81) 100%);
+    --ion-svg-color-main: invert(19%) sepia(76%) saturate(0%) hue-rotate(155deg) brightness(95%) contrast(118%);
+    --ion-svg-color-secondary: invert(70%) sepia(1%) saturate(0%) hue-rotate(73deg) brightness(88%) contrast(91%);
+    --ion-font-family: 'SF UI Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+    --ion-margin: 8px;
+    --bold-font-weight: 700;
+
+    --ion-color-my-message: #CCEDFD;
+    --ion-color-my-message-rgb: 204,237,253;
+    --ion-color-my-message-contrast: #000000;
+    --ion-color-my-message-contrast-rgb: 0,0,0;
+    --ion-color-my-message-shade: #b4d1df;
+    --ion-color-my-message-tint: #d1effd;
+
+    --ion-color-primary: #10151C;
+    --ion-color-primary-rgb: 16,21,28;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #0e1219;
+    --ion-color-primary-tint: #282c33;
+
+    --ion-color-secondary: #131C28;
+    --ion-color-secondary-rgb: 19,28,40;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255,255,255;
+    --ion-color-secondary-shade: #111923;
+    --ion-color-secondary-tint: #2b333e;
+
+    --ion-color-tertiary: #313F53;
+    --ion-color-tertiary-rgb: 49,63,83;
+    --ion-color-tertiary-contrast: #ffffff;
+    --ion-color-tertiary-contrast-rgb: 255,255,255;
+    --ion-color-tertiary-shade: #2b3749;
+    --ion-color-tertiary-tint: #465264;
+
+    --ion-color-fourth: #1E2835;
+    --ion-color-fourth-rgb: 30,40,53;
+    --ion-color-fourth-contrast: #ffffff;
+    --ion-color-fourth-contrast-rgb: 255,255,255;
+    --ion-color-fourth-shade: #1a232f;
+    --ion-color-fourth-tint: #353e49;
+
+    --ion-color-success: #04C300;
+    --ion-color-success-rgb: 4,195,0;
+    --ion-color-success-contrast: #ffffff;
+    --ion-color-success-contrast-rgb: 255,255,255;
+    --ion-color-success-shade: #04ac00;
+    --ion-color-success-tint: #1dc91a;
+
+    --ion-color-warning: #ffce00;
+    --ion-color-warning-rgb: 255,206,0;
+    --ion-color-warning-contrast: #ffffff;
+    --ion-color-warning-contrast-rgb: 255,255,255;
+    --ion-color-warning-shade: #e0b500;
+    --ion-color-warning-tint: #ffd31a;
+
+    --ion-color-danger: #D0021B;
+    --ion-color-danger-rgb: 208,2,27;
+    --ion-color-danger-contrast: #ffffff;
+    --ion-color-danger-contrast-rgb: 255,255,255;
+    --ion-color-danger-shade: #b70218;
+    --ion-color-danger-tint: #d51b32;
+
+    --ion-color-dark: #000000;
+    --ion-color-dark-rgb: 248, 248, 248;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 0, 0, 0;
+    --ion-color-dark-shade: #dadada;
+    --ion-color-dark-tint: #3a3a3a;
+
+    --ion-color-medium: #8D9BAD;
+    --ion-color-medium-rgb: 141,155,173;
+    --ion-color-medium-contrast: #000000;
+    --ion-color-medium-contrast-rgb: 0,0,0;
+    --ion-color-medium-shade: #7c8898;
+    --ion-color-medium-tint: #98a5b5;
+
+    --ion-color-light: #F8F8F8;
+    --ion-color-light-rgb: 248, 248, 248;
+    --ion-color-light-contrast: #000000;
+    --ion-color-light-contrast-rgb: 0, 0, 0;
+    --ion-color-light-shade: #dadada;
+    --ion-color-light-tint: #f9f9f9;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dealer-direct",
+  "short_name": "dealer-direct",
+  "start_url": "/main",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/icon192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },{
+    "src": "assets/icon/icon512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#F0F0F0",
+  "theme_color": "#00EDFF"
+}

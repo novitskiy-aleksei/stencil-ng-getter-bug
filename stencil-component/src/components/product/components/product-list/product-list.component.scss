@@ -1,0 +1,22 @@
+product-list {
+  h2 {
+    padding: 0 10px;
+  }
+  .product-slide {
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .show-more {
+    ion-icon {
+      margin: 0 10px;
+    }
+  }
+  .empty-products {
+    text-align: center;
+    color: gray;
+  }
+}
+
